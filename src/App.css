@@ -1,38 +1,313 @@
-.App {
-  text-align: center;
+:root {
+  --navbar: #ffffff; 
+  --card_header: rgba(139, 19, 0, 1)  ;
+  --hover_link: #fca311 ;
+  --white:#ffffff;
+  --background: #000000;
+  --footer: #e5e5e5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+    background-color:var(--background);
+    font-family: 'Roboto Slab', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+    text-decoration: none;
+}
+/* Nav bar */
+.header-wrapper {
+    min-height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav {
+    background: #000000;
+    width: 100%;
+    padding: 1em 5em 1em;
+    min-height: 8vh;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--navbar);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    /* box-shadow: 0 3px 1rem rgba(235, 222, 222, 0.1); */
 }
 
-.App-link {
-  color: #61dafb;
+
+.nav-button {
+    color: var(--navbar);
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-panel {
+    /* margin-right: 10em; */
+    display: flex;
+    gap: 1rem;
+    background: #000000;
+}
+
+
+.hamburger {
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    /* border: 3px solid var(--navbar); */
+    background-color: var(--background);
+}
+
+.hamburger_btn {
+    width: 1.5rem;
+    height: 0.2rem;
+    background: var(--navbar);
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+.hamburger_btn::after {
+    content: '';
+    background: var(--navbar);
+    position: absolute;
+    width: 1.5rem;
+    height: 0.2rem;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-0.5rem);
+   
+}
+
+.hamburger_btn::before{
+    content: '';
+    background: var(--navbar);
+    position: absolute;
+    width: 1.5rem;
+    height: 0.2rem;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(0.5rem);
+}
+
+/* Hamburger animation */
+
+.hamburger.open .hamburger_btn {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.hamburger.open .hamburger_btn::before {
+    transform: rotate(45deg) translate(35px , -35px)
+ }
+
+.hamburger.open .hamburger_btn::after {
+    transform: rotate(-45deg) translate(35px , 35px)
+}
+
+.nav-panel a{
+    color: var(--navbar);
+    position: relative;
+    display: inline-block;
+}
+.nav-panel a:hover {
+    color: var(--hover_link);
+}
+
+.nav-panel a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--hover_link);
+    height: 3px;
+    width: 0%;
+    left: 0%;
+    top: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-panel a:hover::after {
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    z-index: 1;
+}
+
+a:visited {
+    color:var(--navbar);
+    text-decoration: none;
+}
+
+/* hero section */
+
+.hero {
+    padding-top: 1em;
+    min-height: 100vh;
+    color: var(--white);
+}
+
+.margin-top {
+    height: 8vh;
+}
+.hero-body {
+    height: 98vh;
+    display: flex;
+    align-items: center;
+}
+.greeting {
+    padding: 1em 5em 1em;
+    line-height:1.5;
+    width: 60%;
+}
+
+.greeting a {
+    color: var(--hover_link);
+}
+
+
+/* works */
+.work {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.card-header {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--navbar);
+    padding-bottom: 0.5em;
+}
+
+.card-header::after {
+    content: "";
+    position: absolute;
+    background-color: var(--hover_link);
+    height: 3px;
+    width: 100%;
+    left: 0%;
+    top: 100%;
+    transition: 0.3s ease-in-out;
+}
+.card-wrapper {
+    padding-top: 2em;
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+   flex: 1 1 30em;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.app-title-wrapper {
+    padding: 1em 4em 1em;
+    color: var(--navbar);
+    line-height: 1.8;
+    font-weight: 550;  
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.hidden-link {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.app-title:hover + .hidden-link {
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* contact */
+
+.contact {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3em;
+}
+.contact-wrapper {
+    font-size: 2rem;
+    font-weight: 500;
+
+    width: 100%;
+}
+.contact-infor {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.contact-infor >li {
+    color: var(--navbar);
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    nav {
+        padding: 0.7em 2em 0.7em;
+    }
+    
+    .nav-panel {
+        position:absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: all 0.5s ease-in-out;
+        width: 100vw;
+        transform: translateX(100%);
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+    
+   .hero-body{
+       flex-direction: column;
+   }
+   .greeting {
+       width: 100%;
+   }
+   #avatar {
+       max-height: 20em;
+   }
+   .contact-infor > li {
+    width: 100%;
+}
+   .contact-infor {
+       flex-direction: column;
+       gap: 1em;
+   }
 }

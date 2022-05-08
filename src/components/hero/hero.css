@@ -1,0 +1,43 @@
+.hero {
+    padding-top: 1em;
+    min-height: 100vh;
+    color: var(--white);
+}
+
+.margin-top {
+    height: 8vh;
+}
+.hero-body {
+    height: 98vh;
+    display: flex;
+    align-items: center;
+}
+.greeting {
+    padding: 1em 5em 1em;
+    line-height:1.5;
+    width: 60%;
+}
+
+.greeting a {
+    color: var(--hover_link);
+}
+
+
+@media screen and (max-width: 768px) {
+   .hero-body{
+       flex-direction: column;
+   }
+   .greeting {
+       width: 100%;
+   }
+   #avatar {
+       max-height: 20em;
+   }
+   .contact-infor > li {
+    width: 100%;
+}
+   .contact-infor {
+       flex-direction: column;
+       gap: 1em;
+   }
+}

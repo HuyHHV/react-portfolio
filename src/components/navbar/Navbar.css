@@ -1,0 +1,151 @@
+nav {
+    background: #000000;
+    width: 100%;
+    padding: 1em 5em 1em;
+    min-height: 8vh;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--navbar);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    /* box-shadow: 0 3px 1rem rgba(235, 222, 222, 0.1); */
+}
+
+
+.nav-button {
+    color: var(--navbar);
+    text-decoration: none;
+}
+
+.nav-panel {
+    /* margin-right: 10em; */
+    display: flex;
+    gap: 1rem;
+    background: #000000;
+}
+
+
+.hamburger {
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    /* border: 3px solid var(--navbar); */
+    background-color: var(--background);
+}
+
+.hamburger_btn {
+    width: 1.5rem;
+    height: 0.2rem;
+    background: var(--navbar);
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+.hamburger_btn::after {
+    content: '';
+    background: var(--navbar);
+    position: absolute;
+    width: 1.5rem;
+    height: 0.2rem;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-0.5rem);
+   
+}
+
+.hamburger_btn::before{
+    content: '';
+    background: var(--navbar);
+    position: absolute;
+    width: 1.5rem;
+    height: 0.2rem;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(0.5rem);
+}
+
+/* Hamburger animation */
+
+.hamburger.open .hamburger_btn {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.hamburger.open .hamburger_btn::before {
+    transform: rotate(45deg) translate(35px , -35px)
+ }
+
+.hamburger.open .hamburger_btn::after {
+    transform: rotate(-45deg) translate(35px , 35px)
+}
+
+.nav-panel a{
+    color: var(--navbar);
+    position: relative;
+    display: inline-block;
+}
+.nav-panel a:hover {
+    color: var(--hover_link);
+}
+
+.nav-panel a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--hover_link);
+    height: 3px;
+    width: 0%;
+    left: 0%;
+    top: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-panel a:hover::after {
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    z-index: 1;
+}
+
+a:visited {
+    color:var(--navbar);
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    nav {
+        padding: 0.7em 2em 0.7em;
+    }
+    
+    .nav-panel {
+        position:absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: all 0.5s ease-in-out;
+        width: 100vw;
+        transform: translateX(100%);
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+}

@@ -33,11 +33,4 @@
    #avatar {
        max-height: 20em;
    }
-   .contact-infor > li {
-    width: 100%;
-}
-   .contact-infor {
-       flex-direction: column;
-       gap: 1em;
-   }
 }

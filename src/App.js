@@ -6,7 +6,8 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Home from './components/pages/home'
+import Home from './components/pages/Home'
+import Works from './components/pages/Works';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Navbar/>
       <Routes>
           <Route path="/" element = {<Home/>} />
+          <Route path="/works" element = {<Works/>} />
       </Routes>
     </Router>
     </>

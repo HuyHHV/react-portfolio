@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroSection from '../hero/hero'
+import HeroSection from '../hero/Hero'
 function Home() {
     return (
       <>

@@ -121,6 +121,8 @@ a:visited {
     text-decoration: none;
 }
 
+.visible {display: flex;};
+.invisible {display: none;}
 
 @media screen and (max-width: 768px) {
     .hamburger {

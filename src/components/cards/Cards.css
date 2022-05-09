@@ -1,0 +1,54 @@
+
+.card-header {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--navbar);
+    padding-bottom: 0.5em;
+}
+
+.card-header::after {
+    content: "";
+    position: absolute;
+    background-color: var(--hover_link);
+    height: 3px;
+    width: 100%;
+    left: 0%;
+    top: 100%;
+    transition: 0.3s ease-in-out;
+}
+.card-wrapper {
+    padding-top: 2em;
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+   flex: 1 1 30em;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.app-title-wrapper {
+    padding: 1em 4em 1em;
+    color: var(--navbar);
+    line-height: 1.8;
+    font-weight: 550;  
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.hidden-link {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.app-title:hover + .hidden-link {
+    display: block;
+    transition: all 0.5s ease-in-out;
+}

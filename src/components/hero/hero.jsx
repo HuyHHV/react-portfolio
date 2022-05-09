@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import photo from './personalphoto.png';
-import './hero.css'
+import './Hero.css'
 function HeroSection() {
     return (
         <div className="hero" id="about-me">

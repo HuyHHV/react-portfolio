@@ -9,13 +9,13 @@ function Navbar() {
     return (
         <>
         <nav>
-            <label className="logo">HuyV</label>
+            <label className="logo"><Link to="/">HuyV</Link></label>
             <div className={!click ? 'hamburger' : 'hamburger open'}  onClick={toggleMenu}>
                 <div className="hamburger_btn"></div>
             </div>
-            <ul class={!click ? 'nav-panel' : 'nav-panel nav-active'}>
+            <ul className={!click ? 'nav-panel' : 'nav-panel nav-active'}>
                 <li className="nav-button">
-                    <Link to="/about-me">About me</Link>
+                    <Link to="/">About me</Link>
                 </li>
                 <li className="nav-button">
                     <Link to="/works">Work</Link>

@@ -1,3 +1,14 @@
+.work {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
 
 .card-header {
     position: relative;
@@ -33,6 +44,10 @@
    flex-direction: column;
 }
 
+.card img {
+    height: 300px;
+    width: 600px;
+}
 .app-title-wrapper {
     padding: 1em 4em 1em;
     color: var(--navbar);
@@ -52,3 +67,5 @@
     display: block;
     transition: all 0.5s ease-in-out;
 }
+
+

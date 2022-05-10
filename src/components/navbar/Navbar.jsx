@@ -21,7 +21,7 @@ function Navbar() {
                     <Link to="/works">Work</Link>
                 </li>
                 <li className="nav-button">
-                    <a href="./assets/CV.docx">Resume</a>
+                <Link to="/resume">Resume</Link>
                 </li>
                 <li className="nav-button">
                     <Link to="/contact">Contact</Link>

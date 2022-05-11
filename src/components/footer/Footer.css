@@ -1,0 +1,106 @@
+footer {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color:rgb(191, 200, 200);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 80%;
+    position: relative;
+}
+
+.footer-wrapper >h4 {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.footer-wrapper::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.081);
+    height: 1px;
+    width: 100%;
+    top: 0%; 
+}
+
+.footer-panel > * {
+    color: var(--navbar);
+    text-decoration: none;
+    
+}
+
+.footer-panel {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap:8em;
+    padding-top: 2em;
+    position: relative;
+    width: 80%;
+}
+
+
+.footer-panel > * {
+    color: rgb(191, 200, 200);
+    position: relative;
+    display: inline-block;
+}
+
+.footer-panel *:hover {
+    color: var(--hover_link);
+}
+
+.footer-panel *::after {
+    content: "";
+    position: absolute;
+    background-color: var(--hover_link);
+    height: 3px;
+    width: 0%;
+    left: 0%;
+    top: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-panel *:hover::after {
+    width: 100%;
+}
+
+
+.footer-panel li a {
+    text-decoration: none;
+    z-index: 1;
+    color: rgb(191, 200, 200);
+}
+
+.footer-panel li a:visited {
+    color:var(--navbar);
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    nav {
+        padding: 0.7em 2em 0.7em;
+    }
+    
+    .footer-panel {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+}

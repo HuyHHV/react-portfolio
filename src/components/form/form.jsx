@@ -5,7 +5,7 @@ function Form() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
-
+  const [message, setMessage] = useState('');
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
     const { name, value } = e.target;
@@ -23,6 +23,7 @@ function Form() {
     setFirstName('');
     setLastName('');
     setEmail('');
+    setMessage('');
   };
 
   return (
@@ -51,6 +52,14 @@ function Form() {
           onChange={handleInputChange}
           type="text"
           placeholder="Email"
+        />
+        <label htmlFor="message">Write a message</label>
+        <textarea
+          value={message}
+          name="message"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="your message"
         />
         <button type="submit" onClick={handleFormSubmit}>
           Submit

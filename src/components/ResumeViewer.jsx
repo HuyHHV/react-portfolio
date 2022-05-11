@@ -5,7 +5,7 @@ function ResumeViewer() {
   return (
       <>
          <div className='resume-wrapper'>
-            <iframe src={resume} width="100%" height="500px">
+            <iframe src={resume} width="100%" height="100%">
             </iframe>
         </div>
       </>

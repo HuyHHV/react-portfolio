@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/huyhhv.github.io/react-portfolio/static/css/main.15dcf997.css",
-    "main.js": "/huyhhv.github.io/react-portfolio/static/js/main.5ed5e45e.js",
+    "main.js": "/huyhhv.github.io/react-portfolio/static/js/main.76582579.js",
     "static/media/cocktail.png": "/huyhhv.github.io/react-portfolio/static/media/cocktail.b23028b7a0637877d07e.png",
     "static/media/personalphoto.png": "/huyhhv.github.io/react-portfolio/static/media/personalphoto.34e8c205d433491dd3af.png",
     "static/media/resume.pdf": "/huyhhv.github.io/react-portfolio/static/media/resume.cb1ff3a42e32a5754f73.pdf",
@@ -10,10 +10,10 @@
     "static/media/guru.png": "/huyhhv.github.io/react-portfolio/static/media/guru.8d372db17dca7f2b78dc.png",
     "index.html": "/huyhhv.github.io/react-portfolio/index.html",
     "main.15dcf997.css.map": "/huyhhv.github.io/react-portfolio/static/css/main.15dcf997.css.map",
-    "main.5ed5e45e.js.map": "/huyhhv.github.io/react-portfolio/static/js/main.5ed5e45e.js.map"
+    "main.76582579.js.map": "/huyhhv.github.io/react-portfolio/static/js/main.76582579.js.map"
   },
   "entrypoints": [
     "static/css/main.15dcf997.css",
-    "static/js/main.5ed5e45e.js"
+    "static/js/main.76582579.js"
   ]
 }

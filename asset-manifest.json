@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.15dcf997.css",
-    "main.js": "/react-portfolio/static/js/main.d0660356.js",
+    "main.css": "/react-portfolio/static/css/main.8b8ace4b.css",
+    "main.js": "/react-portfolio/static/js/main.b19acfd2.js",
     "static/media/cocktail.png": "/react-portfolio/static/media/cocktail.b23028b7a0637877d07e.png",
     "static/media/personalphoto.png": "/react-portfolio/static/media/personalphoto.34e8c205d433491dd3af.png",
-    "static/media/resume.pdf": "/react-portfolio/static/media/resume.cb1ff3a42e32a5754f73.pdf",
+    "static/media/trek.png": "/react-portfolio/static/media/trek.5fca83491d3653c1097d.png",
     "static/media/Tech_blog.png": "/react-portfolio/static/media/Tech_blog.b5ee8c93b7356e233cbb.png",
-    "static/media/WeatherDashboard.png": "/react-portfolio/static/media/WeatherDashboard.7438f167e9d674960375.png",
     "static/media/guru.png": "/react-portfolio/static/media/guru.8d372db17dca7f2b78dc.png",
     "index.html": "/react-portfolio/index.html",
-    "main.15dcf997.css.map": "/react-portfolio/static/css/main.15dcf997.css.map",
-    "main.d0660356.js.map": "/react-portfolio/static/js/main.d0660356.js.map"
+    "main.8b8ace4b.css.map": "/react-portfolio/static/css/main.8b8ace4b.css.map",
+    "main.b19acfd2.js.map": "/react-portfolio/static/js/main.b19acfd2.js.map"
   },
   "entrypoints": [
-    "static/css/main.15dcf997.css",
-    "static/js/main.d0660356.js"
+    "static/css/main.8b8ace4b.css",
+    "static/js/main.b19acfd2.js"
   ]
 }

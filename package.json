@@ -2,6 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": false,
+  "homepage": "https://huyhhv.github.io/react-portfolio",
   "dependencies": {
     "@formspark/use-formspark": "^0.1.39",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",

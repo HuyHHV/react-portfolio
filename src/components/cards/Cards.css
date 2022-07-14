@@ -104,6 +104,7 @@
 .card img {
     height: 300px;
     width: 600px;
+    object-fit:fill;
 }
 .app-title-wrapper {
     padding: 1em 4em 1em;

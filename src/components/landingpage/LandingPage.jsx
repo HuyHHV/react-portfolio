@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Landingpage.css'
 function Landingpage() {
     return (
@@ -14,14 +13,14 @@ function Landingpage() {
             <div className="skills ">
                 <h1>My skills</h1>
                 <div className='skill-list'>
-                    <a>HTML</a>
-                    <a>CSS</a>
-                    <a>Javascript</a>
-                    <a>ReactJs</a>
-                    <a>NodeJs</a>
-                    <a>MongoDB</a>
-                    <a>MySQL</a>
-                    <a>GraphQL</a>
+                    <h2>HTML</h2>
+                    <h2>CSS</h2>
+                    <h2>Javascript</h2>
+                    <h2>ReactJs</h2>
+                    <h2>NodeJs</h2>
+                    <h2>MongoDB</h2>
+                    <h2>MySQL</h2>
+                    <h2>GraphQL</h2>
                 </div>
             </div>
         </div>

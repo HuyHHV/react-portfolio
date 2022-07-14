@@ -8,12 +8,11 @@ function HeroSection() {
             <div className="margin-top"></div>
             <div className="hero-body">
                 <div className=" greeting">
-                    <p>
-                        Hello! I'm Huy 
-                        <br/>
-                        I'm a pasionate full-stack developer based in Adelaide. I'm eager to apply time management and organizational skills in various environments. Seeking entry-level opportunities to expand skills while facilitating company growth.
-                    </p>
-                    <Link to="/about-me">Learn more...</Link>
+                    <h1>Hello!</h1>
+                    <h1>I am Huy Vo.</h1>
+                    <h1>I'm a Web Developer.</h1>
+                    <Link to="/about" className='link_container'>About me</Link>
+                    <Link to="/works" className='link_container'>My projects</Link>
                 </div>
                 <div className="avawrapper "> 
                     <img id="avatar" src={photo} alt="persnal photo"/> 

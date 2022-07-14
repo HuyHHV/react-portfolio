@@ -1,0 +1,62 @@
+.aboutme-wrapper{
+    color: var(--white);
+    display: flex;
+    flex: 1 1;
+    padding-top: 30vh;
+    height: 100vh;
+}
+
+.about-me {
+    padding-top: 5vh;
+    padding-left: 10%;
+    width: 50%;
+    line-height: 2;
+    font-weight: 400;
+}
+
+.skills {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    padding-top: 3em;
+    font-size: 1rem;
+}
+
+.skill-list > a {
+    border-radius: 5%;
+    border: 1px solid var(--hover_link);;
+    padding:0.5em;
+    width: fit-content;
+    font-size: 1rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutme-wrapper{
+        padding-top: 15vh;
+        flex-direction: column;
+    }
+    .about-me, .skills {
+        width: 100%;
+    }
+    .skills {
+        padding:1em;
+        margin-top: 2em;
+    }
+ }

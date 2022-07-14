@@ -50,6 +50,7 @@
 .card {
    flex: 1 1 30em;
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    justify-content: center;
    flex-direction: column;
@@ -107,6 +108,7 @@
     object-fit:fill;
 }
 .app-title-wrapper {
+    flex: 1;
     padding: 1em 4em 1em;
     color: var(--navbar);
     line-height: 1.8;
@@ -116,5 +118,10 @@
     width: 100%;
 }
 
+.heading {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
 
 

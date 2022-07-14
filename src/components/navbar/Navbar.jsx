@@ -15,16 +15,16 @@ function Navbar() {
             </div>
             <ul className={!click ? 'nav-panel' : 'nav-panel nav-active'}>
                 <li className="nav-button">
-                    <Link to="/">About me</Link>
+                    <Link to="/about" onClick={toggleMenu} >About me</Link>
                 </li>
                 <li className="nav-button">
-                    <Link to="/works">Work</Link>
+                    <Link to="/works" onClick={toggleMenu} >Work</Link>
                 </li>
                 <li className="nav-button">
-                <Link to="/resume">Resume</Link>
+                <Link to="/resume" onClick={toggleMenu} >Resume</Link>
                 </li>
                 <li className="nav-button">
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/contact" onClick={toggleMenu} >Contact</Link>
                 </li>
                 {/* <li className="nav-button"><a href="/work">Work</a></li>
                 <li className="nav-button"><a href="/contact">Contact</a></li>

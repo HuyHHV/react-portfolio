@@ -11,6 +11,7 @@ import Works from './components/pages/Works';
 import Contact from './components/pages/Contact'
 import Resume from './components/pages/Resume';
 import Footer from './components/footer/Footer';
+import About from './components/pages/About';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Navbar/>
       <Routes>
           <Route path="/" element = {<Home/>} />
+          <Route path="/about" element = {<About/>} />
           <Route path="/works" element = {<Works/>} />
           <Route path="/contact" element = {<Contact/>} />
           <Route path="/resume" element = {<Resume/>} />

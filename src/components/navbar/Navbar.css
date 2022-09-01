@@ -22,6 +22,10 @@ nav {
     text-decoration: none;
 }
 
+.logo{
+    text-decoration: none;
+}
+
 .nav-panel {
     /* margin-right: 10em; */
     display: flex;

@@ -13,7 +13,8 @@
     align-items: center;
 }
 .greeting {
-    font-size: 3rem;
+    padding-top: 1em;
+    font-size: 1.5rem;
     padding-left: 10%;
     display: flex;
     flex-direction: column;
@@ -32,6 +33,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+    
 }
 
 .greeting a:hover,.greeting a:focus{
@@ -42,6 +44,7 @@
 
 @media screen and (max-width: 768px) {
    .hero-body{
+       height: auto;
        flex-direction: column;
    }
    .greeting {

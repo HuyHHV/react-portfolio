@@ -6,7 +6,7 @@ function ResumeViewer() {
   return (
       <>
          <div className='resume-wrapper'>
-            <a href={resumeURL} target="_blank"> Download Resume</a>
+            <a href={resumeURL} target="_blank" rel="noreferrer"> Download Resume</a>
             <div className='iframe-wrapper'>
               <iframe title='resume' src= {embeddedURL}>
             </iframe>
